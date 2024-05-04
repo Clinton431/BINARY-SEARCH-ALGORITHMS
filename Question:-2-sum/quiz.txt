@@ -1,0 +1,6 @@
+You are given an array of N elements, and also a number k. Find if there are 2 elements, whose sum is equal to k.
+Solution
+We can fix every element and try searching for the other element, such that their sum is k, if found, return true, else false.
+
+For that, we can sort the array first. Now got through all th elemets one by one. For every element i the question becomes, is there another element which is equal to k - arr[i]
+

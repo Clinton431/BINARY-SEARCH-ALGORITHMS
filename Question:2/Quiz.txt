@@ -1,0 +1,10 @@
+Count Pairs Whose Sum is Less than Target
+Solution:
+AS discussed earlier, whenever we have problems related to pairs, we can fix one element(as the right element) and search on the LHS of that element
+
+For each fixed element j we want to find the number of elements on the LHS that are less than target - arr[j].
+Lets assume the array is sorted. How can we find the number of elements <k in the array?
+We can find the first index>=k(lets say the index is idx), then the number of elements,k is idx(0 - idx-1).
+So we will sort, our main array and run the algorithm. That is iterate over all elements and fix them as j. For each element identify how many elements are there on the L.H.S.i.e(0,j-1) that are < (target - arr[j])using Binary Search.
+This brings us to a new topic Lowe-bound searches.
+
